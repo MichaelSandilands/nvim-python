@@ -52,6 +52,9 @@ return {
 				-- R
 				r_language_server = {},
 
+				-- Ruff
+				ruff = {},
+
 				-- TOML
 				taplo = {},
 
@@ -87,6 +90,7 @@ return {
 
 				-- Markdown (Linter)
 				"markdownlint",
+				"jupytext",
 
 				-- Shell / Bash
 				"shfmt",
