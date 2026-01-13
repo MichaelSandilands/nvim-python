@@ -1,0 +1,23 @@
+---
+jupyter:
+  jupytext:
+    text_representation:
+      extension: .qmd
+      format_name: quarto
+      format_version: '1.0'
+      jupytext_version: 1.18.1
+  kernelspec:
+    display_name: Python 3
+    language: python
+    name: python3
+---
+
+## Test
+
+This is a test.```{python}
+1+1
+```
+
+```{python}
+2+2
+```

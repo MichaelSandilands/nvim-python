@@ -1,19 +1,17 @@
 return {
 	"GCBallesteros/jupytext.nvim",
-	config = function()
-		require("jupytext").setup({
-			custom_language_formatting = {
-				python = {
-					extension = "qmd",
-					style = "quarto",
-					force_ft = "quarto",
-				},
-				r = {
-					extension = "qmd",
-					style = "quarto",
-					force_ft = "quarto",
-				},
+	opts = {
+		custom_language_formatting = {
+			python = {
+				extension = "md",
+				style = "markdown",
+				force_ft = "markdown", -- you can set whatever filetype you want here
 			},
-		})
-	end,
+			r = {
+				extension = "md",
+				style = "markdown",
+				force_ft = "markdown", -- you can set whatever filetype you want here
+			},
+		},
+	},
 }
