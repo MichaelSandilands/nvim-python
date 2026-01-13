@@ -48,7 +48,6 @@ return {
 						},
 					},
 				},
-				jupytext = {},
 
 				-- R
 				r_language_server = {},

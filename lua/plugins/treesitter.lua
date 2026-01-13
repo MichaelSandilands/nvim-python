@@ -24,6 +24,7 @@ return {
 				"markdown",
 				"markdown_inline",
 				"python",
+				"quarto",
 				"query",
 				"r",
 				"scss",
@@ -34,34 +35,13 @@ return {
 				"vimdoc",
 				"yaml",
 			},
-			-- list of parser names, or 'all', to ignore installing
-			ignore_install = {},
-			-- install parsers in ensure_installed synchronously
-			sync_install = false,
-			-- automatically install missing parsers when entering buffer
-			auto_install = false,
-			fold = {
-				enable = false,
-				disable = false,
-			},
 			highlight = {
-				enable = false,
-				disable = false,
-				-- setting this to true will run `:h syntax` and tree-sitter at
-				-- the same time set this to `true` if you depend on 'syntax'
-				-- being enabled using this option may slow down your editor,
-				-- and duplicate highlights instead of `true` it can also be a
-				-- list of languages
-				additional_vim_regex_highlighting = false,
-			},
-			incremental_selection = {
-				enable = true,
-				disable = false,
-			},
+                enable = true, -- CHANGE THIS: Must be true for highlighting to work
+                additional_vim_regex_highlighting = false,
+            },
 			indent = {
-				enable = false,
-				disable = false,
-			},
+                enable = true, -- Recommended: Helps with indentation in code blocks
+            },
 		},
 	},
 	{

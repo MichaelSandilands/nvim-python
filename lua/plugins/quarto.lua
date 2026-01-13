@@ -2,6 +2,7 @@
 return {
 	{
 		"quarto-dev/quarto-nvim",
+		ft = { "quarto", "markdown" },
 		dependencies = {
 			"jmbuhr/otter.nvim",
 			"nvim-treesitter/nvim-treesitter",
@@ -12,7 +13,7 @@ return {
 				closePreviewOnExit = true,
 				lspFeatures = {
 					enabled = true,
-					chunks = "curly",
+					chunks = "all",
 					languages = { "r", "python", "julia", "bash", "html" },
 					diagnostics = {
 						enabled = true,
@@ -25,12 +26,7 @@ return {
 				codeRunner = {
 					enabled = true,
 					default_method = "iron",
-					ft_runners = {
-						quarto = "molten",
-						markdown = "molten",
-					},
-					-- Takes precedence over `default_method`
-					never_run = { "yaml" },
+					ft_runners = {},
 				},
 			})
 		end,
